@@ -1,0 +1,19 @@
+#timer{
+    font-size: 18pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: aqua;
+    width: auto;
+    border-radius: 0.25rem;
+    margin: 2px;
+    padding: 2px;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+body{
+    display: flex;
+    background-color: azure;
+    justify-content: center;
+}

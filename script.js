@@ -1,6 +1,9 @@
-let hor = document.getElementById("hor")
-let min = document.getElementById("min")
-let sec = document.getElementById("sec")
+let timer = document.getElementById("timer")
+let form = document.getElementById("form")
+let date = localStorage.getItem("count_to")
+if(!date){
+    form.hidden = false;
+}
 
 let vac = new Date (2023,11,22,17)
 console.log(vac)
@@ -10,14 +13,14 @@ setInterval(()=>{
     diff = vac.getTime()-now.getTime()
     hr =  diff/3600000
     diff = diff%3600000
-    hor.innerText =Math.floor(hr) + ":";
+    timer.innerText =Math.floor(hr) + ":";
 
     mn = diff/60000;
     diff = diff%60000
-    hor.innerText = hor.innerText + Math.floor(mn)+":";
+    timer.innerText = timer.innerText + Math.floor(mn)+":";
 
     se = diff/1000;
 
-    hor.innerText = hor.innerText+ Math.floor(se);
+    timer.innerText = timer.innerText+ Math.floor(se);
     
 },1000)
