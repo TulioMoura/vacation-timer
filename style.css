@@ -1,19 +1,55 @@
 #timer{
-    font-size: 18pt;
+    font-size: 38pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: aqua;
     width: auto;
+    border-width: 0.25rem;
+    border-style: solid;
     border-radius: 0.25rem;
-    margin: 2px;
-    padding: 2px;
+    border-color: #64edcd;
+    
     height: 25%;
     display: flex;
     justify-content: center;
+    width: 25%;
+    overflow-x: hidden;
    
 }
 
 body{
     display: flex;
-    background-color: azure;
+    background-color: cadetblue;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+
+    justify-content: center;
+    width: 25%;
+    border: 0.25rem solid aliceblue ;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+input{
+    font-size: 14pt;
+    height: 10%;
+    background-color: aliceblue;
+    border: none;
+    margin: 0.25rem;
+}
+
+#submit{
+    background-color: lightskyblue;
+
+}
+#submit:hover{
+    background-color: chartreuse;
+    border: 1px solid lightskyblue;
+}
+
+*{
+    background-color: cadetblue;
 }
